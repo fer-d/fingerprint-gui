@@ -28,13 +28,8 @@
 
 #include <syslog.h>
 
-#define VERSION "1.05"
-#define COPYRIGHT "(C) 2008-2013  Wolfgang Ullrich"
-#define HOMEPAGE "http://www.pdfserver.net/fingerprint/"
-#define FORUM_ONLINE "http://darkblue.homeip.net/fingerprint/Forum/"
-#define DONATE "contact.php"
-#define BITCOINADDRESS "1LsaAggcE8rgB3Hkrxv2adEYEqDkbVSHFd"
-#define LICENSE "http://www.gnu.org/licenses/gpl.html"
+#define VERSION "1.06"
+#define COPYRIGHT "(C) 2008-2013  Wolfgang Ullrich \n Rebuild 2014 fer-d"
 
 extern "C" {
 #include <libfprint/fprint.h>

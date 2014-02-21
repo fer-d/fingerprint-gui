@@ -129,16 +129,6 @@ void MainWindowImpl::showHelp(){
     srv.openUrl(url);
 }
 
-void MainWindowImpl::showHomepage(){
-    QDesktopServices srv;
-    srv.openUrl(QUrl(HOMEPAGE));
-}
-
-void MainWindowImpl::showForum(){
-    QDesktopServices srv;
-    srv.openUrl(QUrl(FORUM_ONLINE));
-}
-
 bool MainWindowImpl::getUuid(QString dir){
     QMessageBox msgBox(this);
     msgBox.setIcon(QMessageBox::Critical);
