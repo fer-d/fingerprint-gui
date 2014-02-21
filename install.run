@@ -1,0 +1,13 @@
+#!/bin/bash
+
+./install-dependencies.sh
+
+qmake-qt4 LIBPOLKIT_QT=LIBPOLKIT_QT_1_1
+
+make
+
+sudo make install
+
+sudo make install-upek
+
+./unlock-udev.sh
