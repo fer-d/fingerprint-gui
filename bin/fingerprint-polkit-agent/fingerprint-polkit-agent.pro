@@ -14,7 +14,7 @@ isEmpty(LIBEXEC) {
     LIBEXEC = lib
 }
 isEmpty(LIBPOLKIT_QT) {
-    LIBPOLKIT_QT = LIBPOLKIT_QT_1_0
+    LIBPOLKIT_QT = LIBPOLKIT_QT_1_1
 }
 LIBEXECDIR = $${PREFIX}/$${LIBEXEC}/fingerprint-gui
 XDGDIR     = /etc/xdg
