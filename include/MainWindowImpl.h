@@ -124,8 +124,6 @@ private slots:
     void testPam();
     void showAbout();
     void showHelp();
-    void showHomepage();
-    void showForum();
     void findPamServices();
     void setPwdPath(QString);
     void setPwdPath1();

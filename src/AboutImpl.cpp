@@ -35,28 +35,3 @@ AboutImpl::AboutImpl(QWidget *parent,Qt::WFlags f)
     versionLabel->setText(QApplication::translate("AboutDialog", s.data(),0,QApplication::UnicodeUTF8));
     copyrightLabel->setText(QApplication::translate("AboutDialog", COPYRIGHT,0,QApplication::UnicodeUTF8));
 }
-
-// slots
-void AboutImpl::bitcoin(){
-    QClipboard *cb = QApplication::clipboard();
-// set a text to the Clipboard
-    cb->setText(BITCOINADDRESS);
-}
-
-void AboutImpl::donate(){
-    QString s;
-    s.append(HOMEPAGE);
-    s.append(DONATE);
-    QDesktopServices srv;
-    srv.openUrl(QUrl(s));
-}
-
-void AboutImpl::license(){
-    QDesktopServices srv;
-    srv.openUrl(QUrl(LICENSE));
-}
-
-void AboutImpl::homepage(){
-    QDesktopServices srv;
-    srv.openUrl(QUrl(HOMEPAGE));
-}

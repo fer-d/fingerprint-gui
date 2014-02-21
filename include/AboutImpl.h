@@ -44,11 +44,6 @@ Q_OBJECT
 public:
     AboutImpl(QWidget *parent=0,Qt::WFlags f=0);
 
-private slots:
-    void bitcoin();
-    void donate();
-    void license();
-    void homepage();
 };
 
 
