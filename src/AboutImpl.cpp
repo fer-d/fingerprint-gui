@@ -34,12 +34,6 @@ AboutImpl::AboutImpl(QWidget *parent,Qt::WFlags f)
     s.append(VERSION);
     versionLabel->setText(QApplication::translate("AboutDialog", s.data(),0,QApplication::UnicodeUTF8));
     copyrightLabel->setText(QApplication::translate("AboutDialog", COPYRIGHT,0,QApplication::UnicodeUTF8));
-    homeButton->setText(QApplication::translate("AboutDialog",HOMEPAGE,0,QApplication::UnicodeUTF8));
-    bitcoinButton->setText(QApplication::translate("AboutDialog",BITCOINADDRESS,0,QApplication::UnicodeUTF8));
-    connect(donateButton,SIGNAL(clicked()),this,SLOT(donate()));
-    connect(licenseButton,SIGNAL(clicked()),this,SLOT(license()));
-    connect(homeButton,SIGNAL(clicked()),this,SLOT(homepage()));
-    connect(bitcoinButton,SIGNAL(clicked()),this,SLOT(bitcoin()));
 }
 
 // slots
