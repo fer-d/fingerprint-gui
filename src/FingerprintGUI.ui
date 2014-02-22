@@ -1741,11 +1741,6 @@ QRadioButton::indicator:checked:pressed
      <height>20</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu_File">
-    <property name="title">
-     <string>&amp;File</string>
-    </property>
-   </widget>
    <widget class="QMenu" name="menu_About">
     <property name="title">
      <string>&amp;Help</string>
@@ -1754,7 +1749,6 @@ QRadioButton::indicator:checked:pressed
     <addaction name="action_About"/>
     <addaction name="separator"/>
    </widget>
-   <addaction name="menu_File"/>
    <addaction name="menu_About"/>
   </widget>
   <action name="action_About">

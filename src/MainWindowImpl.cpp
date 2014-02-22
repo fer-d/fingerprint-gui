@@ -70,7 +70,6 @@ MainWindowImpl::MainWindowImpl(QWidget * parent, Qt::WFlags f)
     connect(okButton,SIGNAL(clicked()),this,SLOT(nextTab()));
     connect(tabWidget,SIGNAL(currentChanged(int)),this,SLOT(tabChanged()));
     connect(deviceCombo,SIGNAL(currentIndexChanged(int)),deviceHandler,SLOT(setCurrentDevice(int)));
-    connect(action_Exit,SIGNAL(triggered()),this,SLOT(closeApp()));
     connect(cancelButton,SIGNAL(clicked()),this,SLOT(closeApp()));
     connect(exportButton,SIGNAL(clicked()),this,SLOT(saveToFile()));
     connect(vendornameButton,SIGNAL(clicked()),this,SLOT(displayModeVendor()));
@@ -83,9 +82,6 @@ MainWindowImpl::MainWindowImpl(QWidget * parent, Qt::WFlags f)
     connect(passwdLine2,SIGNAL(textChanged(const QString&)),this,SLOT(enableSaveButton()));
     connect(saveButton,SIGNAL(clicked()),this,SLOT(savePasswd()));
     connect(action_About,SIGNAL(triggered(bool)),this,SLOT(showAbout()));
-    connect(action_Help,SIGNAL(triggered(bool)),this,SLOT(showHelp()));
-    connect(action_Homepage,SIGNAL(triggered(bool)),this,SLOT(showHomepage()));
-    connect(action_Forum_Online,SIGNAL(triggered(bool)),this,SLOT(showForum()));
 
     currentTab=0;
     tabWidget->setCurrentIndex(currentTab);
