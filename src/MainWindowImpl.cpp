@@ -72,8 +72,6 @@ MainWindowImpl::MainWindowImpl(QWidget * parent, Qt::WFlags f)
     connect(deviceCombo,SIGNAL(currentIndexChanged(int)),deviceHandler,SLOT(setCurrentDevice(int)));
     connect(cancelButton,SIGNAL(clicked()),this,SLOT(closeApp()));
     connect(exportButton,SIGNAL(clicked()),this,SLOT(saveToFile()));
-    connect(vendornameButton,SIGNAL(clicked()),this,SLOT(displayModeVendor()));
-    connect(drivernameButton,SIGNAL(clicked()),this,SLOT(displayModeDriver()));
     connect(testButton,SIGNAL(clicked()),this,SLOT(testPam()));
     connect(pathButton,SIGNAL(clicked()),this,SLOT(setPwdPath1()));
     connect(pathEdit,SIGNAL(editingFinished()),this,SLOT(setPwdPath2()));
@@ -620,8 +618,6 @@ void MainWindowImpl::scanTabToBack(){
     tabWidget->setTabEnabled(SETTINGS_TAB,true);
     okButton->setEnabled(true);
     rescanButton->setEnabled(true);
-    vendornameButton->setEnabled(true);
-    drivernameButton->setEnabled(true);
     deviceCombo->setEnabled(true);
 }
 
@@ -713,8 +709,6 @@ void MainWindowImpl::scanTabToFront(){
     tabWidget->setTabEnabled(SETTINGS_TAB,false);
     okButton->setEnabled(false);
     rescanButton->setEnabled(false);
-    vendornameButton->setEnabled(false);
-    drivernameButton->setEnabled(false);
     deviceCombo->setEnabled(false);
     currentFingerprint=new Fingerprint(currentFinger,deviceHandler->getCurrentDevice(NULL),textLabels,iconLabels);
     disconnect(currentFingerprint->getDevice(),SIGNAL(neededStages(int)),this,SLOT(setScanTabNeededStages(int)));

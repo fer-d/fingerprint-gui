@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="/new/prefix1">
+    <file>res/hands.png</file>
     <file>res/radiobutton_checked_gn.png</file>
     <file>res/radiobutton_checked_hover_gn.png</file>
     <file>res/radiobutton_checked_hover.png</file>
@@ -15,8 +16,6 @@
     <file>res/gnome-user-interface.png</file>
     <file>res/Animation.gif</file>
     <file>res/Fingerprint.png</file>
-    <file>res/HandL.png</file>
-    <file>res/HandR.png</file>
     <file>res/fp-error.png</file>
     <file>res/fp-ok.png</file>
     <file>res/fp-wait.png</file>

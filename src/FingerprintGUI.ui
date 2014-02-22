@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>550</width>
-    <height>440</height>
+    <width>630</width>
+    <height>530</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,14 +18,14 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>550</width>
-    <height>440</height>
+    <width>630</width>
+    <height>530</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>550</width>
-    <height>440</height>
+    <width>630</width>
+    <height>530</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -36,39 +36,42 @@
     <normaloff>:/new/prefix1/res/gnome-user-interface.png</normaloff>:/new/prefix1/res/gnome-user-interface.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_6">
+   <layout class="QVBoxLayout" name="verticalLayout_6" stretch="1,50,1">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>4</number>
+    </property>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0">
       <property name="spacing">
-       <number>6</number>
+       <number>10</number>
       </property>
       <property name="sizeConstraint">
        <enum>QLayout::SetNoConstraint</enum>
       </property>
-      <property name="leftMargin">
-       <number>5</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>5</number>
-      </property>
-      <property name="bottomMargin">
+      <property name="margin">
        <number>0</number>
       </property>
       <item>
        <widget class="QLabel" name="deviceLabel">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>177</width>
-          <height>16777215</height>
+          <height>15</height>
          </size>
         </property>
         <property name="text">
@@ -85,7 +88,7 @@
       <item>
        <widget class="QComboBox" name="deviceCombo">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -100,19 +103,6 @@
          <string>Selection of useable fingerprint devices.</string>
         </property>
        </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>1</width>
-          <height>17</height>
-         </size>
-        </property>
-       </spacer>
       </item>
       <item>
        <widget class="QPushButton" name="rescanButton">
@@ -133,55 +123,6 @@
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout">
-      <property name="sizeConstraint">
-       <enum>QLayout::SetNoConstraint</enum>
-      </property>
-      <property name="leftMargin">
-       <number>5</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>5</number>
-      </property>
-      <property name="bottomMargin">
-       <number>0</number>
-      </property>
-      <item>
-       <widget class="QRadioButton" name="vendornameButton">
-        <property name="text">
-         <string>Show Vendor/Device</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="drivernameButton">
-        <property name="text">
-         <string>Show Drivername</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-     </layout>
-    </item>
-    <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -191,12 +132,12 @@
       </property>
       <property name="maximumSize">
        <size>
-        <width>530</width>
-        <height>265</height>
+        <width>620</width>
+        <height>390</height>
        </size>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="devicesTab">
        <attribute name="title">
@@ -231,19 +172,6 @@
         <item>
          <layout class="QVBoxLayout">
           <item>
-           <widget class="QLabel" name="fingerLabel">
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>20</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Chose Finger to scan</string>
-            </property>
-           </widget>
-          </item>
-          <item>
            <widget class="QFrame" name="frame">
             <property name="enabled">
              <bool>true</bool>
@@ -260,46 +188,27 @@
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <widget class="QLabel" name="leftHandPictureLabel">
+            <widget class="QLabel" name="handsImageLabel">
              <property name="geometry">
               <rect>
-               <x>20</x>
-               <y>20</y>
-               <width>131</width>
-               <height>154</height>
+               <x>0</x>
+               <y>0</y>
+               <width>601</width>
+               <height>351</height>
               </rect>
              </property>
              <property name="text">
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="GUI-res.qrc">:/new/prefix1/res/HandL.png</pixmap>
-             </property>
-            </widget>
-            <widget class="QLabel" name="rightHandPictureLabel">
-             <property name="enabled">
-              <bool>true</bool>
-             </property>
-             <property name="geometry">
-              <rect>
-               <x>175</x>
-               <y>20</y>
-               <width>131</width>
-               <height>153</height>
-              </rect>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-             <property name="pixmap">
-              <pixmap resource="GUI-res.qrc">:/new/prefix1/res/HandR.png</pixmap>
+              <pixmap resource="GUI-res.qrc">:/new/prefix1/res/hands.png</pixmap>
              </property>
             </widget>
             <widget class="QRadioButton" name="lsButton">
              <property name="geometry">
               <rect>
-               <x>21</x>
-               <y>42</y>
+               <x>271</x>
+               <y>39</y>
                <width>14</width>
                <height>14</height>
               </rect>
@@ -326,8 +235,8 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="lrButton">
              <property name="geometry">
               <rect>
-               <x>40</x>
-               <y>19</y>
+               <x>271</x>
+               <y>79</y>
                <width>14</width>
                <height>14</height>
               </rect>
@@ -354,8 +263,8 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="lmButton">
              <property name="geometry">
               <rect>
-               <x>64</x>
-               <y>6</y>
+               <x>272</x>
+               <y>121</y>
                <width>14</width>
                <height>14</height>
               </rect>
@@ -382,8 +291,8 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="lpButton">
              <property name="geometry">
               <rect>
-               <x>86</x>
-               <y>11</y>
+               <x>272</x>
+               <y>162</y>
                <width>14</width>
                <height>14</height>
               </rect>
@@ -413,8 +322,8 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="ltButton">
              <property name="geometry">
               <rect>
-               <x>114</x>
-               <y>50</y>
+               <x>271</x>
+               <y>203</y>
                <width>14</width>
                <height>14</height>
               </rect>
@@ -441,10 +350,10 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="rtButton">
              <property name="geometry">
               <rect>
-               <x>178</x>
-               <y>50</y>
-               <width>14</width>
-               <height>14</height>
+               <x>312</x>
+               <y>201</y>
+               <width>16</width>
+               <height>16</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -472,8 +381,8 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="rpButton">
              <property name="geometry">
               <rect>
-               <x>207</x>
-               <y>10</y>
+               <x>312</x>
+               <y>161</y>
                <width>14</width>
                <height>14</height>
               </rect>
@@ -503,8 +412,8 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="rmButton">
              <property name="geometry">
               <rect>
-               <x>230</x>
-               <y>6</y>
+               <x>312</x>
+               <y>120</y>
                <width>14</width>
                <height>14</height>
               </rect>
@@ -534,8 +443,8 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="rrButton">
              <property name="geometry">
               <rect>
-               <x>252</x>
-               <y>19</y>
+               <x>312</x>
+               <y>78</y>
                <width>14</width>
                <height>14</height>
               </rect>
@@ -565,8 +474,8 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="rsButton">
              <property name="geometry">
               <rect>
-               <x>272</x>
-               <y>42</y>
+               <x>312</x>
+               <y>38</y>
                <width>14</width>
                <height>14</height>
               </rect>
@@ -593,49 +502,18 @@ QRadioButton::indicator:checked:pressed
               <bool>false</bool>
              </property>
             </widget>
-            <widget class="QLabel" name="leftHandLabel">
-             <property name="geometry">
-              <rect>
-               <x>38</x>
-               <y>174</y>
-               <width>80</width>
-               <height>18</height>
-              </rect>
-             </property>
-             <property name="text">
-              <string>Left Hand</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-            <widget class="QLabel" name="rightHandLabel">
-             <property name="geometry">
-              <rect>
-               <x>190</x>
-               <y>174</y>
-               <width>80</width>
-               <height>18</height>
-              </rect>
-             </property>
-             <property name="text">
-              <string>Right Hand</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
             <widget class="QLabel" name="currentFingerLabel">
              <property name="geometry">
               <rect>
-               <x>303</x>
-               <y>69</y>
+               <x>230</x>
+               <y>270</y>
                <width>141</width>
                <height>41</height>
               </rect>
              </property>
              <property name="font">
               <font>
+               <family>Sans Serif</family>
                <pointsize>12</pointsize>
                <weight>75</weight>
                <bold>true</bold>
@@ -1676,8 +1554,11 @@ QRadioButton::indicator:checked:pressed
     </item>
     <item>
      <layout class="QHBoxLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
       <property name="sizeConstraint">
-       <enum>QLayout::SetNoConstraint</enum>
+       <enum>QLayout::SetDefaultConstraint</enum>
       </property>
       <property name="leftMargin">
        <number>5</number>
@@ -1723,13 +1604,6 @@ QRadioButton::indicator:checked:pressed
       </item>
      </layout>
     </item>
-    <item>
-     <widget class="Line" name="line">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -1737,7 +1611,7 @@ QRadioButton::indicator:checked:pressed
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>550</width>
+     <width>630</width>
      <height>20</height>
     </rect>
    </property>
