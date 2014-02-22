@@ -1,45 +1,46 @@
-<ui version="4.0" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>SavedDialog</class>
- <widget class="QDialog" name="SavedDialog" >
-  <property name="windowModality" >
+ <widget class="QDialog" name="SavedDialog">
+  <property name="windowModality">
    <enum>Qt::ApplicationModal</enum>
   </property>
-  <property name="geometry" >
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>200</width>
+    <width>210</width>
     <height>116</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>Fingerprint saved</string>
   </property>
-  <property name="windowIcon" >
-   <iconset resource="widget-res.qrc" >
+  <property name="windowIcon">
+   <iconset resource="widget-res.qrc">
     <normaloff>:/new/prefix1/res/gnome-user-interface.png</normaloff>:/new/prefix1/res/gnome-user-interface.png</iconset>
   </property>
-  <layout class="QVBoxLayout" >
+  <layout class="QVBoxLayout" stretch="4,2">
    <item>
-    <layout class="QHBoxLayout" >
+    <layout class="QHBoxLayout">
      <item>
-      <layout class="QVBoxLayout" >
-       <property name="spacing" >
+      <layout class="QVBoxLayout">
+       <property name="spacing">
         <number>0</number>
        </property>
-       <property name="margin" >
+       <property name="margin">
         <number>5</number>
        </property>
-       <item>
-        <widget class="QLabel" name="modeLabel" >
-         <property name="text" >
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="modeLabel">
+         <property name="text">
           <string>Fingerprint was saved to disk.</string>
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QLabel" name="label_2" >
-         <property name="text" >
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
           <string>Select another finger?</string>
          </property>
         </widget>
@@ -48,10 +49,10 @@
      </item>
      <item>
       <spacer>
-       <property name="orientation" >
+       <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
-       <property name="sizeHint" stdset="0" >
+       <property name="sizeHint" stdset="0">
         <size>
          <width>40</width>
          <height>20</height>
@@ -62,46 +63,20 @@
     </layout>
    </item>
    <item>
-    <spacer>
-     <property name="orientation" >
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0" >
-      <size>
-       <width>20</width>
-       <height>40</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" >
-     <property name="margin" >
+    <layout class="QHBoxLayout">
+     <property name="margin">
       <number>5</number>
      </property>
      <item>
-      <spacer>
-       <property name="orientation" >
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0" >
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QPushButton" name="yesButton" >
-       <property name="text" >
+      <widget class="QPushButton" name="yesButton">
+       <property name="text">
         <string>&amp;Yes</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="noButton" >
-       <property name="text" >
+      <widget class="QPushButton" name="noButton">
+       <property name="text">
         <string>&amp;No</string>
        </property>
       </widget>
@@ -111,7 +86,10 @@
   </layout>
  </widget>
  <resources>
-  <include location="widget-res.qrc" />
+  <include location="widget-res.qrc"/>
+  <include location="widget-res.qrc"/>
+  <include location="widget-res.qrc"/>
+  <include location="widget-res.qrc"/>
  </resources>
  <connections/>
 </ui>

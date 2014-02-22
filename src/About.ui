@@ -29,9 +29,12 @@
   <property name="locale">
    <locale language="C" country="AnyCountry"/>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,4,4,4">
    <property name="spacing">
-    <number>0</number>
+    <number>8</number>
+   </property>
+   <property name="topMargin">
+    <number>35</number>
    </property>
    <item>
     <widget class="QFrame" name="frame_2">
@@ -56,6 +59,18 @@
       </property>
       <item>
        <widget class="QLabel" name="iconLabel">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>80</height>
+         </size>
+        </property>
         <property name="locale">
          <locale language="C" country="AnyCountry"/>
         </property>
@@ -64,6 +79,9 @@
         </property>
         <property name="pixmap">
          <pixmap resource="About-res.qrc">:/newPrefix/res/gnome-user-interface.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
