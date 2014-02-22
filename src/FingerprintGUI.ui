@@ -32,7 +32,7 @@
    <string>Setup Fingerprints</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="GUI-res.qrc">
+   <iconset resource="widget-res.qrc">
     <normaloff>:/new/prefix1/res/gnome-user-interface.png</normaloff>:/new/prefix1/res/gnome-user-interface.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -196,7 +196,7 @@
        </size>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="devicesTab">
        <attribute name="title">
@@ -1738,22 +1738,18 @@ QRadioButton::indicator:checked:pressed
      <x>0</x>
      <y>0</y>
      <width>550</width>
-     <height>23</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
     <property name="title">
      <string>&amp;File</string>
     </property>
-    <addaction name="action_Exit"/>
    </widget>
    <widget class="QMenu" name="menu_About">
     <property name="title">
      <string>&amp;Help</string>
     </property>
-    <addaction name="action_Help"/>
-    <addaction name="action_Homepage"/>
-    <addaction name="action_Forum_Online"/>
     <addaction name="separator"/>
     <addaction name="action_About"/>
     <addaction name="separator"/>
@@ -1761,29 +1757,9 @@ QRadioButton::indicator:checked:pressed
    <addaction name="menu_File"/>
    <addaction name="menu_About"/>
   </widget>
-  <action name="action_Exit">
-   <property name="text">
-    <string>&amp;Exit</string>
-   </property>
-  </action>
   <action name="action_About">
    <property name="text">
     <string>&amp;About</string>
-   </property>
-  </action>
-  <action name="action_Help">
-   <property name="text">
-    <string>&amp;Help</string>
-   </property>
-  </action>
-  <action name="action_Forum_Online">
-   <property name="text">
-    <string>&amp;Forum Online</string>
-   </property>
-  </action>
-  <action name="action_Homepage">
-   <property name="text">
-    <string>H&amp;omepage</string>
    </property>
   </action>
  </widget>
@@ -1805,7 +1781,11 @@ QRadioButton::indicator:checked:pressed
   <tabstop>okButton</tabstop>
  </tabstops>
  <resources>
+  <include location="widget-res.qrc"/>
+  <include location="widget-res.qrc"/>
+  <include location="widget-res.qrc"/>
   <include location="GUI-res.qrc"/>
+  <include location="widget-res.qrc"/>
  </resources>
  <connections>
   <connection>
