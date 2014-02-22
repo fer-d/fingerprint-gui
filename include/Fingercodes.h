@@ -44,16 +44,16 @@ static const fp_finger fingerCode[10]={
 };
 
 #define FINGERS static const char* fingers[10]={\
-    "Left Little",\
-    "Left Ring",\
-    "Left Middle",\
-    "Left Index",\
-    "Left Thumb",\
-    "Right Thumb",\
-    "Right Index",\
-    "Right Middle",\
-    "Right Ring",\
-    "Right Little"\
+    "LEFT LITTLE",\
+    "LEFT RING",\
+    "LEFT MIDDLE",\
+    "LEFT INDEX",\
+    "LEFT THUMB",\
+    "RIGHT THUMB",\
+    "RIGHT INDEX",\
+    "RIGHT MIDDLE",\
+    "RIGHT RING",\
+    "RIGHT LITTLE"\
 };
 
 #endif /* _FINGERCODES_H */

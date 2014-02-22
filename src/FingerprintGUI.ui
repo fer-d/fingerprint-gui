@@ -207,10 +207,10 @@
             <widget class="QRadioButton" name="lsButton">
              <property name="geometry">
               <rect>
-               <x>271</x>
-               <y>39</y>
-               <width>14</width>
-               <height>14</height>
+               <x>256</x>
+               <y>25</y>
+               <width>42</width>
+               <height>41</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -231,14 +231,17 @@ QRadioButton::indicator:checked:pressed
              <property name="text">
               <string/>
              </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
             </widget>
             <widget class="QRadioButton" name="lrButton">
              <property name="geometry">
               <rect>
-               <x>271</x>
-               <y>79</y>
-               <width>14</width>
-               <height>14</height>
+               <x>256</x>
+               <y>65</y>
+               <width>42</width>
+               <height>42</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -263,10 +266,10 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="lmButton">
              <property name="geometry">
               <rect>
-               <x>272</x>
-               <y>121</y>
-               <width>14</width>
-               <height>14</height>
+               <x>256</x>
+               <y>106</y>
+               <width>42</width>
+               <height>42</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -291,10 +294,10 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="lpButton">
              <property name="geometry">
               <rect>
-               <x>272</x>
-               <y>162</y>
-               <width>14</width>
-               <height>14</height>
+               <x>256</x>
+               <y>147</y>
+               <width>42</width>
+               <height>42</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -322,10 +325,10 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="ltButton">
              <property name="geometry">
               <rect>
-               <x>271</x>
-               <y>203</y>
-               <width>14</width>
-               <height>14</height>
+               <x>256</x>
+               <y>189</y>
+               <width>42</width>
+               <height>42</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -350,10 +353,10 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="rtButton">
              <property name="geometry">
               <rect>
-               <x>312</x>
-               <y>201</y>
-               <width>16</width>
-               <height>16</height>
+               <x>297</x>
+               <y>187</y>
+               <width>42</width>
+               <height>42</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -381,10 +384,10 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="rpButton">
              <property name="geometry">
               <rect>
-               <x>312</x>
-               <y>161</y>
-               <width>14</width>
-               <height>14</height>
+               <x>297</x>
+               <y>147</y>
+               <width>42</width>
+               <height>42</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -405,6 +408,9 @@ QRadioButton::indicator:checked:pressed
              <property name="text">
               <string/>
              </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
              <property name="checked">
               <bool>true</bool>
              </property>
@@ -412,10 +418,10 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="rmButton">
              <property name="geometry">
               <rect>
-               <x>312</x>
-               <y>120</y>
-               <width>14</width>
-               <height>14</height>
+               <x>297</x>
+               <y>106</y>
+               <width>42</width>
+               <height>42</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -443,10 +449,10 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="rrButton">
              <property name="geometry">
               <rect>
-               <x>312</x>
-               <y>78</y>
-               <width>14</width>
-               <height>14</height>
+               <x>297</x>
+               <y>64</y>
+               <width>42</width>
+               <height>42</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -474,10 +480,10 @@ QRadioButton::indicator:checked:pressed
             <widget class="QRadioButton" name="rsButton">
              <property name="geometry">
               <rect>
-               <x>312</x>
-               <y>38</y>
-               <width>14</width>
-               <height>14</height>
+               <x>297</x>
+               <y>23</y>
+               <width>42</width>
+               <height>42</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -505,28 +511,31 @@ QRadioButton::indicator:checked:pressed
             <widget class="QLabel" name="currentFingerLabel">
              <property name="geometry">
               <rect>
-               <x>230</x>
+               <x>220</x>
                <y>270</y>
-               <width>141</width>
+               <width>161</width>
                <height>41</height>
               </rect>
              </property>
              <property name="font">
               <font>
                <family>Sans Serif</family>
-               <pointsize>12</pointsize>
+               <pointsize>14</pointsize>
                <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
+             <property name="styleSheet">
+              <string notr="true">color: #00ffff;</string>
+             </property>
              <property name="frameShape">
-              <enum>QFrame::Panel</enum>
+              <enum>QFrame::NoFrame</enum>
              </property>
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
              </property>
              <property name="text">
-              <string>Right Index</string>
+              <string>RIGHT INDEX</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
